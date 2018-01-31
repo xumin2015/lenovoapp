@@ -1,0 +1,152 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </button>
+    <ion-title> 选配产品</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+        <span style="color:red">
+        下一步
+      </span>
+      </button>
+
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div style="margin:20px 30px;height:1px;background:grey;position:relative">
+      <div class="step_content" style="width:33%">
+        <div class="step_button">
+          <span>1</span>
+
+        </div>
+        <span style="position: absolute;top: 30px;width: 60px;text-align: center;margin-left: -20px;">
+       选配产品
+     </span>
+      </div>
+    <div class="step_content" style="width:33%;background: grey;">
+      <div class="step_button" style="left:33%;background: grey">
+        2
+      </div>
+      <span style="position: absolute;top: 30px;width: 60px;text-align: center;margin-left: -20px;">
+       成功案例
+     </span>
+    </div>
+    <div class="step_content" style="width:33%;background: grey">
+      <div class="step_button" style="left:66%;background: grey">
+        3
+      </div>
+      <span style="position: absolute;top: 30px;width: 60px;text-align: center;margin-left: -20px;">
+       买方
+     </span>
+    </div>
+    <div class="step_content" style="background: grey">
+      <div class="step_button" style="right:0px;background: grey">
+        4
+      </div>
+      <span style="position: absolute;top: 30px;width: 72px;text-align: center;margin-left: -46px;">
+       生成报价单
+     </span>
+    </div>
+  </div>
+  <!--<div class="step_lable">-->
+     <!--<span style="width:72px;-->
+  <!--text-align: center;">-->
+       <!--选配产品-->
+     <!--</span>-->
+    <!--<span style="width:72px;-->
+  <!--text-align: center;">-->
+       <!--成功案例-->
+     <!--</span>-->
+    <!--<span style="width:72px;-->
+  <!--text-align: center;">-->
+       <!--买方-->
+     <!--</span>-->
+    <!--<span style="width:72px;-->
+  <!--text-align: center;">-->
+       <!--生成报价单-->
+     <!--</span>-->
+  <!--</div>-->
+  <div style="height:30px;display:flex;justify-content:space-between;align-items:center;margin-top: 60px;padding:0px 10px;color:#A0522D;background:#FF8C00">
+    <span>显示历史报价单(选中即可套用)</span>
+    <ion-icon name="ios-arrow-forward"></ion-icon>
+
+  </div>
+<div style="margin:20px 20px;border:1px solid grey" *ngFor="let grocery of items;">
+  <div style="height: 30px;background: grey;display: flex;justify-content: space-between;align-items: center;padding:0px 10px">
+      <span>
+        昭阳K22-80
+      </span>
+    <span>
+      <button>
+      <ion-icon name="ios-trash-outline"></ion-icon>
+      删除
+    </button>
+    <button>
+      <ion-icon name="md-create"></ion-icon>
+      修改配置项
+    </button>
+    </span>
+
+  </div>
+  <div style="height: 40px;display: flex;justify-content: space-between;align-items: center;padding:0px 10px">
+    <div style="float:left;width:40%;padding:0px 10px" >
+      <span style="float:right">
+         客户经理:
+      </span>
+
+    </div>
+    <div style="float:right;width:60%;padding:0px 10px">
+      <input type="text" placeholder="请输入" style="border:1px solid grey;border-radius: 3px;height:25px">
+    </div>
+  </div>
+  <div style="height: 40px;display: flex;justify-content: space-between;align-items: center;padding:0px 10px;background: #D3D3D3">
+    <div style="float:left;width:40%;padding:0px 10px" >
+      <div style="float:left;height:30px;color:red;display: flex;justify-content: space-between;align-items: center;">*</div>
+      <div style="float:right;height:30px;display: flex;justify-content: space-between;align-items: center;">销售价(元):</div>
+
+    </div>
+    <div style="float:right;width:60%;padding:0px 10px">
+      <input type="text" placeholder="请输入" style="border:1px solid grey;border-radius: 3px;height:25px">
+    </div>
+  </div>
+  <div style="height: 40px;display: flex;justify-content: space-between;align-items: center;padding:0px 10px">
+    <div style="float:left;width:40%;padding:0px 10px" >
+      <div style="float:left;height:30px;color:red;display: flex;justify-content: space-between;align-items: center;">*</div>
+      <div style="float:right;height:30px;display: flex;justify-content: space-between;align-items: center;">数量:</div>
+
+    </div>
+    <div style="float:right;width:60%;padding:0px 10px">
+      <input type="number" placeholder="请输入" style="border:1px solid grey;border-radius: 3px;height:25px">
+    </div>
+  </div>
+  <div style="height: 40px;display: flex;justify-content: space-between;align-items: center;padding:0px 10px;background: #D3D3D3">
+    <div style="float:left;width:40%;padding:0px 10px" >
+       <span style="float:right">
+         是否显示折扣率:
+      </span>
+    </div>
+    <div style="float:right;width:60%;padding:0px 10px">
+      <input type="text" placeholder="请输入" style="border:1px solid grey;border-radius: 3px;height:25px">%
+    </div>
+  </div>
+  <div style="height: 40px;display: flex;justify-content: space-between;align-items: center;padding:0px 10px">
+    <div style="float:left;width:40%;padding:0px 10px" >
+       <span style="float:right">
+         税率:
+      </span>
+    </div>
+    <div style="float:right;width:60%;padding:0px 10px">
+      <input type="text" placeholder="请输入" style="border:1px solid grey;border-radius: 3px;height:25px">%
+    </div>
+  </div>
+</div>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title style="background-color: red;color:white"><span style="color:white">添加产品</span></ion-title>
+  </ion-toolbar>
+</ion-footer>

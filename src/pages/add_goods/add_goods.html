@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </button>
+    <ion-title> 添加产品</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+        <span style="color:red">
+        下一步
+      </span>
+      </button>
+
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div style="height:30px;display:flex;justify-content:space-between;align-items:center;padding:0px 10px;color:#A0522D;background:#FF8C00">
+    <span>显示历史报价单(选中即可套用)</span>
+    <ion-icon name="ios-arrow-forward"></ion-icon>
+  </div>
+  <ion-list>
+    <ion-item class="addGoodsItem" *ngFor="let p of itemArray" >
+      <span class="addGoodsItemTitle">{{p.title}}</span>
+      <button ion-button clear item-end>
+        <span>{{p.mark}}</span>
+        <ion-icon name="ios-arrow-forward"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title style="background-color: red;color:white"><span style="color:white">验证</span></ion-title>
+  </ion-toolbar>
+</ion-footer>
