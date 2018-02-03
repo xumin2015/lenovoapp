@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
-  selector: 'page-list',
+  selector: 'page-list-sass',
   templateUrl: 'add_goods_case.html'
 })
 export class AddGoodsCasePage {
   selectedItem: any;
   icons: string[];
   items: Array<{title: string, note: string, icon: string}>;
-  itemArray:[];
+  itemArray:Array<{title: string, mark: string}>;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
     this.itemArray = [

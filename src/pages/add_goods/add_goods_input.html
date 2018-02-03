@@ -7,7 +7,7 @@
     <ion-buttons end>
       <button ion-button icon-only (click)="openModal()">
         <span style="color:red">
-        下一步
+       保存
       </span>
       </button>
 
@@ -16,25 +16,25 @@
 </ion-header>
 
 <ion-content>
-  <div style="height:30px;display:flex;justify-content:space-between;align-items:center;padding:0px 10px;color:#A0522D;background:#FF8C00">
+  <div class="price_list_step_content_menu" style="margin-top: 0px">
     <span>显示历史报价单(选中即可套用)</span>
     <ion-icon name="ios-arrow-forward"></ion-icon>
   </div>
   <ion-list>
-    <ion-item class="addGoodsItem">
-      <span class="addGoodsItemTitle">产品分类</span>
-      <button ion-button clear item-end>
+    <ion-item class="padding_0 back_color_f7f7f7">
+      <span class="margin_left_20">产品分类</span>
+      <button ion-button clear item-end class="color_999999">
         <span>配置</span>
         <ion-icon name="ios-arrow-forward"></ion-icon>
       </button>
     </ion-item>
-    <ion-item  class="addGoodsItem">
-      <span class="addGoodsItemTitle">产品分类</span>
-      <input  clear item-end placeholder="请输入产品名称"/>
+    <ion-item  class="padding_0 back_color_f7f7f7">
+      <span class="margin_left_20">产品分类</span>
+      <input  class="price_list_add_goods_input" clear item-end placeholder="请输入产品名称"/>
     </ion-item>
-    <ion-item class="addGoodsItem">
-      <span class="addGoodsItemTitle">产品配置</span>
-      <textarea  clear item-end placeholder="请输入产品配置"></textarea>
+    <ion-item class="padding_0 back_color_f7f7f7">
+      <span class="margin_left_20">产品配置</span>
+      <textarea  class="price_list_add_goods_textarea" clear item-end placeholder="请输入产品配置"></textarea>
     </ion-item>
   </ion-list>
 </ion-content>

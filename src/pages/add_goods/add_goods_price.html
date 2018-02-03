@@ -1,0 +1,135 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </button>
+    <ion-title> 买家信息</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+        <span style="color:red">
+        下一步
+      </span>
+      </button>
+
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="price_list_step_container">
+    <div class="step_content" style="width:20%">
+      <div class="step_button">
+        <span class="price_list_step_container_step_num">1</span>
+      </div>
+      <span class="price_list_step_container_mark">
+       选配产品
+     </span>
+    </div>
+    <div class="step_content" style="width:33%;background: grey;">
+      <div class="step_button" style="left:33%;background: grey">
+        <span class="price_list_step_container_step_num">2</span>
+      </div>
+      <span class="price_list_step_container_mark margin_left_30" >
+       成功案例
+     </span>
+    </div>
+    <div class="step_content" style="width:33%;background: grey">
+      <div class="step_button" style="left:66%;background: grey">
+        <span class="price_list_step_container_step_num">3</span>
+      </div>
+      <span class="price_list_step_container_mark margin_left_30">
+       买方
+     </span>
+    </div>
+    <div class="step_content" style="background: grey">
+      <div class="step_button" style="right:0px;background: grey">
+        <span class="price_list_step_container_step_num">4</span>
+      </div>
+      <span class="price_list_step_container_mark margin_left_2">
+       生成报价单
+     </span>
+    </div>
+  </div>
+  <ion-list  style="margin-top: 54px">
+    <div class="main_title back_color_fececec">
+      客户经理信息
+    </div>
+    <div  class="main_title">
+      <div class="center_right" style="width:120px !important;"  >
+        <div class="color_red">*</div>
+        联想大客户经理：
+      </div>
+      <input  class="main_input" style="margin-right: 40px" clear item-end placeholder="请输入产品名称"/>
+    </div>
+    <div  class="main_title">
+      <div class="center_right" style="width:120px !important;"  >
+        <div class="color_red">*</div>
+        手机号：
+      </div>
+      <input  class="main_input" style="margin-right: 40px" clear item-end placeholder="请输入产品名称"/>
+    </div>
+    <div  class="main_title">
+      <div class="center_right" style="width:120px !important;"  >
+        <div class="color_red">*</div>
+        联系电话：
+      </div>
+      <input  class="main_input" style="margin-right: 40px" clear item-end placeholder="请输入产品名称"/>
+    </div>
+    <div  class="main_title">
+      <div class="center_right" style="width:120px !important;"  >
+        <div class="color_red">*</div>
+        邮箱：
+      </div>
+      <input  class="main_input" style="margin-right: 40px" clear item-end placeholder="请输入产品名称"/>
+    </div>
+    <div class="main_title back_color_fececec">
+      其他优惠
+    </div>
+    <div  class="main_title">
+      <div class="center_right" style="width:120px !important;"  >
+        <div class="color_red">*</div>
+        其他优惠(元)：
+      </div>
+      <input  class="main_input" style="margin-right: 40px" clear item-end placeholder="请输入产品名称"/>
+    </div>
+    <div  class="main_title">
+      <div class="center_right" style="width:120px !important;"  >
+        <div class="color_red">*</div>
+        赠送：
+      </div>
+      <input  class="main_input" style="margin-right: 40px" clear item-end placeholder="请输入产品名称"/>
+    </div>
+    <div class="main_title back_color_fececec">
+      其他优惠
+    </div>
+    <div  class="main_title">
+      <div class="center_right" style="width:120px !important;"  >
+        <div class="color_red">*</div>
+       备注信息：
+      </div>
+      <input  class="main_input" style="margin-right: 40px" clear item-end placeholder="请输入产品名称"/>
+    </div>
+    <div  class="main_title">
+      <div class="center_right" style="width:120px !important;"  >
+        <div class="color_red">*</div>
+        报价有效期(天)：
+      </div>
+      <input  class="main_input" style="margin-right: 40px" clear item-end placeholder="请输入产品名称"/>
+    </div>
+    <div  class="main_title">
+      <div class="center_right" style="width:120px !important;"  >
+        <div class="color_red">*</div>
+        产品交货期(天)：
+      </div>
+      <input  class="main_input" style="margin-right: 40px" clear item-end placeholder="请输入产品名称"/>
+    </div>
+  </ion-list>
+
+
+</ion-content>
+
+<ion-footer>
+  <div class="main_tail_button">
+    生成报价单
+  </div>
+</ion-footer>

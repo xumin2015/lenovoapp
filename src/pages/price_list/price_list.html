@@ -20,15 +20,15 @@
   <div class="content_title">
     <span>我的报价单</span>
   </div>
-  <div class="content_title_view_class" *ngFor="let grocery of items;">
+  <div class="content_title_view_class" *ngFor="let item of items;">
   <div class="content_view">
    <div class="content_view_line content_view_line_name">
-      <span>买方：张三</span>
-       <span>项目总额：<span class="red_content">¥99999</span></span>
+      <span>买方：{{item.businessName}}</span>
+       <span>项目总额：<span class="red_content">¥{{item.quotationAmount}}</span></span>
    </div>
     <div class="content_view_line content_view_line_time">
-      <span>单号：12342535435</span>
-      <span>2017-12-12</span>
+      <span>单号：{{item.quotationNo}}</span>
+      <span>2017-12-12{{item.createTime}}</span>
     </div>
   </div>
   <div class="content_seting_view">

@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </button>
+    <ion-title> 我的课程</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+        <span style="color:red">
+        下一步
+      </span>
+      </button>
+
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background-color: #f4f4f4">
+  <ion-slides pager style="height:100px" autoplay="600" speed="800" loop="true" autoplayDisableOnInteration="true">
+
+    <ion-slide>
+      <img src="../../assets/page_img/slide_bg1.png" style="width:100%;height:100%" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="../../assets/page_img/slide_bg2.png" style="width:100%;height:100%" alt="">
+    </ion-slide>
+  </ion-slides>
+  <div style="height:50px;font-size: 15px;border-bottom:1px solid #d4d4d4;display: flex;justify-content: center;align-items: center;position:relative">
+    <hr style="border-bottom:1px solid #000;width:200px;position:absolute;margin:0px 0px;padding:0px 0px;z-index:-1" />
+    <div style="background-color: rgb(244, 244, 244);padding:0px 10px">
+      猜你喜欢
+    </div>
+  </div>
+  <div style="height:50px;font-size: 15px;border-bottom:1px solid #d4d4d4">
+    <div style="height:50px;text-align: center;width:50%;display: flex;justify-content: center;align-items: center;float:left">
+      <div style="height:50px;width:100px;display: flex;justify-content: center;align-items: center;border-bottom: 1px solid red">课程</div>
+    </div>
+    <div style="height:50px;text-align: center;width:50%;display: flex;justify-content: center;align-items: center;float:left">
+      <div style="height:50px;width:100px;display: flex;justify-content: center;align-items: center;">考试</div>
+    </div>
+  </div>
+  <div style="display: flex;flex-direction: row;background-color: white;margin-bottom: 20px" *ngFor="let grocery of [1,2,3,4,5,6,7,8,9];">
+    <div style="width:90px;height:90px">
+      <img src="../../assets/page_img/course_bg.png" style="width:90px;height:90px;" alt="">
+    </div>
+    <div style="display:flex;flex:1;flex-direction:column;justify-content: space-between;align-items: left;margin-left: 10px;padding:10px 10px 0px 0px">
+      <div style="font-size: 20px">刀锋计划</div>
+      <div>打造竞品TOP产品，打造竞品TOP产品</div>
+      <div style="width:100%">
+        <span>2017-03-12截止 时长:30分钟</span>
+        <span style="float:right">97人已参考</span>
+      </div>
+    </div>
+
+  </div>
+
+</ion-content>

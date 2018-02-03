@@ -16,76 +16,59 @@
 </ion-header>
 
 <ion-content>
-  <div style="margin:20px 30px;height:1px;background:grey;position:relative">
-    <div class="step_content" style="width:33%">
+  <div class="price_list_step_container">
+    <div class="step_content" style="width:20%">
       <div class="step_button">
-        <span>1</span>
-
+        <span class="price_list_step_container_step_num">1</span>
       </div>
-      <span style="position: absolute;top: 30px;width: 60px;text-align: center;margin-left: -20px;">
+      <span class="price_list_step_container_mark">
        选配产品
      </span>
     </div>
     <div class="step_content" style="width:33%;background: grey;">
       <div class="step_button" style="left:33%;background: grey">
-        2
+        <span class="price_list_step_container_step_num">2</span>
       </div>
-      <span style="position: absolute;top: 30px;width: 60px;text-align: center;margin-left: -20px;">
+      <span class="price_list_step_container_mark margin_left_30" >
        成功案例
      </span>
     </div>
     <div class="step_content" style="width:33%;background: grey">
       <div class="step_button" style="left:66%;background: grey">
-        3
+        <span class="price_list_step_container_step_num">3</span>
       </div>
-      <span style="position: absolute;top: 30px;width: 60px;text-align: center;margin-left: -20px;">
+      <span class="price_list_step_container_mark margin_left_30">
        买方
      </span>
     </div>
     <div class="step_content" style="background: grey">
       <div class="step_button" style="right:0px;background: grey">
-        4
+        <span class="price_list_step_container_step_num">4</span>
       </div>
-      <span style="position: absolute;top: 30px;width: 72px;text-align: center;margin-left: -46px;">
+      <span class="price_list_step_container_mark margin_left_2">
        生成报价单
      </span>
     </div>
   </div>
-  <!--<div class="step_lable">-->
-  <!--<span style="width:72px;-->
-  <!--text-align: center;">-->
-  <!--选配产品-->
-  <!--</span>-->
-  <!--<span style="width:72px;-->
-  <!--text-align: center;">-->
-  <!--成功案例-->
-  <!--</span>-->
-  <!--<span style="width:72px;-->
-  <!--text-align: center;">-->
-  <!--买方-->
-  <!--</span>-->
-  <!--<span style="width:72px;-->
-  <!--text-align: center;">-->
-  <!--生成报价单-->
-  <!--</span>-->
-  <!--</div>-->
-  <div style="margin-bottom:8px;height:30px;display:flex;justify-content:space-between;align-items:center;margin-top: 60px;padding:0px 10px;color:#A0522D;background:#FF8C00">
+  <div class="price_list_step_content_menu">
     <span>显示历史报价单(选中即可套用)</span>
     <ion-icon name="ios-arrow-forward"></ion-icon>
-
   </div>
-  <div class="content_title_view_class" *ngFor="let grocery of items;">
-    <div class="content_view">
-      <div class="content_view_line content_view_line_name">
-        <span>买方：张三</span>
-        <span>项目总额：<span class="red_content">¥99999</span></span>
-      </div>
-      <div class="content_view_line content_view_line_time">
-        <span>单号：12342535435</span>
-        <span>2017-12-12</span>
+  <div class="border_top_d2d2d2 margin_top_12">
+    <div class="margin_bottom_8" *ngFor="let grocery of items;">
+      <div class="price_list_content_view">
+        <div class="price_list_content_view_line price_list_content_view_line_name">
+          <span class="font_size_14 font_weight_bold">买方：张三</span>
+          <span class="font_size_14 font_weight_bold">项目总额：<span class="color_red font_size_18">¥99999</span></span>
+        </div>
+        <div class="price_list_content_view_line price_list_content_view_line_time">
+          <span>单号：12342535435</span>
+          <span>2017-12-12</span>
+        </div>
       </div>
     </div>
   </div>
+
 
 </ion-content>
 <ion-footer>

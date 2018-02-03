@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </button>
+    <ion-title> 买家信息</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+        <span style="color:red">
+        下一步
+      </span>
+      </button>
+
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="price_list_step_container">
+    <div class="step_content" style="width:20%">
+      <div class="step_button">
+        <span class="price_list_step_container_step_num">1</span>
+      </div>
+      <span class="price_list_step_container_mark">
+       选配产品
+     </span>
+    </div>
+    <div class="step_content" style="width:33%;background: grey;">
+      <div class="step_button" style="left:33%;background: grey">
+        <span class="price_list_step_container_step_num">2</span>
+      </div>
+      <span class="price_list_step_container_mark margin_left_30" >
+       成功案例
+     </span>
+    </div>
+    <div class="step_content" style="width:33%;background: grey">
+      <div class="step_button" style="left:66%;background: grey">
+        <span class="price_list_step_container_step_num">3</span>
+      </div>
+      <span class="price_list_step_container_mark margin_left_30">
+       买方
+     </span>
+    </div>
+    <div class="step_content" style="background: grey">
+      <div class="step_button" style="right:0px;background: grey">
+        <span class="price_list_step_container_step_num">4</span>
+      </div>
+      <span class="price_list_step_container_mark margin_left_2">
+       生成报价单
+     </span>
+    </div>
+  </div>
+  <div class="price_list_step_content_menu">
+    <span>显示历史报价单(选中即可套用)</span>
+    <ion-icon name="ios-arrow-forward"></ion-icon>
+  </div>
+  <ion-list *ngFor="let p of itemArray">
+    <div class="price_case_buyer_meg_container">
+      <div class="price_case_buyer_meg_container_left">
+        <div class="price_case_buyer_meg_container_input">
+          <div class="price_case_buyer_meg_container_item">
+            <div class="width_percent_37 center_left">
+              <div class="color_red">*</div>
+              <div class="margin_left_6">销售价(元):</div>
+            </div>
+            <div style="flex:1;padding-left:10px">
+              <input type="number" placeholder="请输入" class="price_case_buyer_meg_container_item_input">
+            </div>
+          </div>
+        </div>
+        <div style="height:50%">
+          <div class="price_case_buyer_meg_container_item">
+            <div class="width_percent_37 center_left">
+              <div class="color_red">*</div>
+              <div class="margin_left_6">销售价(元):</div>
+            </div>
+            <div style="flex:1;padding-left:10px">
+              <input type="number" placeholder="请输入" class="price_case_buyer_meg_container_item_input">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="price_case_buyer_meg_container_img_container">
+        <ion-icon name="md-person-add" style="font-size:80px"></ion-icon>
+      </div>
+    </div>
+  </ion-list>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title style="background-color: red;"><span style="color:white">添加产品</span></ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,181 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </button>
+    <ion-title> 报价单</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+        <span style="color:red">
+        下一步
+      </span>
+      </button>
+
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="display: flex;flex-direction: column;">
+  <div style="height:50px;width:100%;background-color:#c8c7cc;color:red;display:flex;justify-content: center;align-items: center ">
+    企业级产品报价单
+  </div>
+  <div style="margin: 10px 10px 0px 10px;padding:15px 15px;background-color: red;color:white">
+   <div style="font-size: 16px">
+     报价单：1132342423
+   </div>
+    <div style="font-size: 12px">
+      买房名称：南慕容北乔峰
+    </div>
+  </div>
+  <div style="margin: 0px 10px;background-color: #FF8C00;color:white;text-align: center">
+     报价有效期为5天，以下产品有效期为30天
+  </div>
+  <div style="border-left: 5px solid red;height:29px;margin-top: 20px;display: flex;justify-content: left;align-items: center;padding-left:5px;font-weight: bold">
+           价格汇总
+  </div>
+  <div style="border-bottom:1px solid #c8c7cc;padding:0px 20px;display: flex;height:29px;justify-content: space-between;align-items: center;background-color: #c8c7cc">
+     <span style="width:25%">品名</span><span style="width:25%;text-align: center">数量</span><span style="width:25%;text-align: center">单价</span><span style="width:25%;text-align: right">金额</span>
+  </div>
+  <div style="border-bottom:1px solid #c8c7cc;padding:0px 20px;display: flex;height:29px;justify-content: space-between;align-items: center;">
+    <span style="width:25%">昭阳K22-50</span><span style="width:25%;text-align: center">10</span><span style="width:25%;text-align: center">1</span><span style="width:25%;text-align: right">3000.00</span>
+  </div>
+  <div style="borer-bottom:1px solid #c8c7cc;;padding:0px 20px;display: flex;height:29px;justify-content: space-between;align-items: center;">
+    <span style="width:25%">昭阳K22-50</span><span style="width:25%;text-align: center">10</span><span style="width:25%;text-align: center">1</span><span style="width:25%;text-align: right">3000.00</span>
+  </div>
+  <div style="padding:0px 20px;display: flex;height:29px;justify-content: space-between;align-items: center;background-color: #c8c7cc">
+ <span>合计</span>
+    <span style="color:red">¥108.00</span>
+  </div>
+  <div style="padding:0px 20px;border-bottom:1px solid #c8c7cc;display: flex;height:29px;justify-content: space-between;align-items: center;">
+    <span>税率：1%</span>
+    <span>¥1.08</span>
+  </div>
+  <div style="padding:0px 20px;border-bottom:1px solid #c8c7cc;display: flex;height:29px;justify-content: space-between;align-items: center;">
+    <span>其他优惠</span>
+    <span>¥1.08</span>
+  </div>
+  <div style="border-bottom:1px solid #c8c7cc;padding:0px 20px;display: flex;height:29px;justify-content: space-between;align-items: center;background-color: #c8c7cc">
+    <span>总计(含税)</span>
+    <span style="color:red">¥108.00</span>
+  </div>
+  <div style="border-left: 5px solid red;height:29px;margin-top: 20px;display: flex;justify-content: left;align-items: center;padding-left:5px;font-weight: bold">
+    赠送
+  </div>
+  <div style="border-bottom:1px solid #c8c7cc;padding:0px 20px;display: flex;height:29px;justify-content: space-between;align-items: center;">
+    <span>送你一个耳机，祝你旅途愉快</span>
+  </div>
+  <div style="border-left: 5px solid red;height:29px;margin-top: 20px;display: flex;justify-content: left;align-items: center;padding-left:5px;font-weight: bold">
+    报价单描述
+  </div>
+  <div *ngFor="let p of [1,2,3]">
+  <div style="border-left: 5px solid red;background-color:red;color:white;height:29px;margin-top: 20px;display: flex;justify-content: left;align-items: center;padding-left:5px;font-weight: bold">
+    昭阳K22-80
+  </div>
+  <div style="border-bottom:1px solid #c8c7cc;padding:0px 20px;display: flex;height:29px;justify-content: space-between;align-items: center;background-color: #c8c7cc">
+    <span>产品配置</span>
+  </div>
+  <div style="border-bottom:1px solid #c8c7cc;padding:0px 20px;display: flex;height:29px;justify-content: space-between;align-items: center;">
+    <span>配置1</span>
+    <span>1</span>
+  </div>
+  <div style="border-bottom:1px solid #c8c7cc;padding:0px 20px;display: flex;height:29px;justify-content: space-between;align-items: center;">
+    <span>配置2</span>
+    <span>2</span>
+  </div>
+  <div style="border-bottom:1px solid #c8c7cc;padding:0px 20px;display: flex;height:29px;justify-content: space-between;align-items: center;">
+    <span>配置3</span>
+    <span>3</span>
+  </div>
+  <div style="border-bottom:1px solid #c8c7cc;padding:0px 20px;display: flex;height:29px;justify-content: space-between;align-items: center;">
+    <span>配置4</span>
+    <span>4</span>
+  </div>
+  <div style="border-bottom:1px solid #c8c7cc;padding:0px 20px;display: flex;height:29px;justify-content: space-between;align-items: center;">
+  <span>配置5</span>
+  <span>5</span>
+  </div>
+  <div style="padding:0px 20px;display: flex;height:29px;color:red;justify-content: center;align-items: center;">
+    点击查看更多
+  </div>
+    <div style="border-bottom:1px solid #c8c7cc;padding:0px 20px;display: flex;height:29px;justify-content: space-between;align-items: center;background-color: #c8c7cc">
+      <span>产品配置</span>
+    </div>
+    <div style="margin:10px 10px;border:1px solid grey;display: flex;height:100px;flex-direction: row">
+      <div style="width:100px;height:100px;border-left:1px solid grey">
+        <img src="../../assets/page_img/computer.png" style="width:100px;height:98px" alt="">
+      </div>
+      <div style="flex:1;height:100%">
+        <div style="height:50%;border-bottom: 1px solid grey">
+          <div style="height: 100%;display: flex;justify-content: space-between;align-items: center;padding:0px 10px">
+            <span style="width:33%">品名</span><span style="width:34%;text-align: center">数量</span><span style="width:33%;text-align: right">金额</span>
+          </div>
+        </div>
+        <div style="height:50%;">
+          <div style="height: 100%;display: flex;justify-content: space-between;align-items: center;padding:0px 10px">
+            <span style="width:33%">华硕</span><span style="width:34%;text-align: center">3</span><span style="width:33%;text-align: right">2100.00</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div style="border-bottom:1px solid #c8c7cc;padding:0px 20px;display: flex;height:29px;justify-content: space-between;align-items: center;background-color: #c8c7cc">
+    <span>成功案例</span>
+  </div>
+
+  <div style="border-left: 5px solid red;height:29px;margin-top: 20px;display: flex;justify-content: left;align-items: center;padding-left:5px;font-weight: bold">
+    买方信息
+  </div>
+  <div style="border-bottom:1px solid #c8c7cc;padding:0px 20px;display: flex;height:29px;justify-content: space-between;align-items: center;">
+    <span>买方</span>
+    <span>张三</span>
+  </div>
+  <div style="border-bottom:1px solid #c8c7cc;padding:0px 20px;display: flex;height:29px;justify-content: space-between;align-items: center;">
+    <span>买方编号</span>
+    <span>1242423424</span>
+  </div>
+  <div style="border-left: 5px solid red;height:29px;margin-top: 20px;display: flex;justify-content: left;align-items: center;padding-left:5px;font-weight: bold">
+    卖方信息
+  </div>
+  <div style="border-bottom:1px solid #c8c7cc;padding:0px 20px;display: flex;height:29px;justify-content: space-between;align-items: center;">
+    <span>客户经理</span>
+    <span>李四</span>
+  </div>
+  <div style="border-bottom:1px solid #c8c7cc;padding:0px 20px;display: flex;height:29px;justify-content: space-between;align-items: center;">
+    <span>客户经理手机号</span>
+    <span>1242423424</span>
+  </div>
+  <div style="border-bottom:1px solid #c8c7cc;padding:0px 20px;display: flex;height:29px;justify-content: space-between;align-items: center;">
+    <span>客户经理电话</span>
+    <span>1242423424</span>
+  </div>
+  <div style="border-bottom:1px solid #c8c7cc;padding:0px 20px;display: flex;height:29px;justify-content: space-between;align-items: center;">
+  <span>客户经理邮箱</span>
+  <span>1242423424@qq.com</span>
+  </div>
+  <div style="border-left: 5px solid red;height:29px;margin-top: 20px;display: flex;justify-content: left;align-items: center;padding-left:5px;font-weight: bold">
+    免责声明
+  </div>
+  <div style="padding:20px">
+    免责声明免责声明免责声明免责声明免责声明免责声明免责声明免责声明免责声明免责声明免责声明
+    免责声明免责声明免责声明免责声明免责声明免责声明免责声明免责声明免责声明免责声明免责声明免责声明
+    免责声明免责声明免责声明免责声明免责声明免责声明免责声明免责声明
+  </div>
+  <div style="height:40px;display: flex;align-items: center">
+    <div style="width:50%;background-color: red;color:white;float:left;text-align: center">
+      联想商用pc
+    </div>
+    <div style="width:50%;background-color: black;color:white;float:left;text-align: center">
+      专业只为更好
+    </div>
+  </div>
+  <div style="background-color: #c8c7cc;color:white;height:40px;padding:0px 20px;display: flex;align-items: center;justify-content: space-between">
+   <div>
+     <ion-icon name="ios-cloud-download-outline" ></ion-icon>下载</div>
+    <div>
+      <ion-icon name="md-share" ></ion-icon>分享</div>
+    <div>
+      <ion-icon name="ios-mail-outline" ></ion-icon>发我邮箱</div>
+  </div>
+
+</ion-content>

@@ -16,14 +16,14 @@
 </ion-header>
 
 <ion-content>
-  <div style="height:30px;display:flex;justify-content:space-between;align-items:center;padding:0px 10px;color:#A0522D;background:#FF8C00">
-    <span>推荐产品(选中即可套用)</span>
+  <div class="price_list_step_content_menu" style="margin-top: 0px">
+    <span>显示推荐产品(选中即可套用)</span>
     <ion-icon name="ios-arrow-forward"></ion-icon>
   </div>
-  <ion-list>
-    <ion-item class="addGoodsItem" *ngFor="let p of itemArray" >
-      <span class="addGoodsItemTitle">{{p.title}}</span>
-      <button class="addGoodsRecommendButton" ion-button  item-end>
+  <ion-list class="border_bottom_dbdbdb">
+    <ion-item class="padding_0 back_color_f7f7f7" *ngFor="let p of itemArray" >
+      <span class="addGoodsItemTitle">{{p.name}}</span>
+      <button class="price_list_add_goods_gecommend_button" ion-button  item-end>
         <span>选择</span>
       </button>
     </ion-item>
